@@ -16,13 +16,11 @@
   },
   "homepage": "https://github.com/kadamwhite/p5-server#readme",
   "scripts": {
-    "postinstall": "node server/postinstall.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "serve . -p 3030 && open http://127.0.0.1:3030"
+    "start": "node server/server.js"
   },
   "dependencies": {
-    "chalk": "^1.0.0",
-    "p5": "*",
-    "serve": "^1.4.0"
+    "live-server": "^0.7.1",
+    "p5": "*"
   }
 }
