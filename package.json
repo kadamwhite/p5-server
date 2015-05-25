@@ -1,0 +1,28 @@
+{
+  "name": "p5-server",
+  "version": "0.1.0",
+  "description": "A lightweight environment for exploring p5.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kadamwhite/p5-server.git"
+  },
+  "keywords": [
+    "p5"
+  ],
+  "author": "K Adam White",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kadamwhite/p5-server/issues"
+  },
+  "homepage": "https://github.com/kadamwhite/p5-server#readme",
+  "scripts": {
+    "postinstall": "node server/postinstall.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve . -p 3030 && open http://127.0.0.1:3030"
+  },
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "p5": "*",
+    "serve": "^1.4.0"
+  }
+}
